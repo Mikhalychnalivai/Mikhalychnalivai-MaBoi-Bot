@@ -1,3 +1,6 @@
+import os
+os.system("pip install aiogram aiohttp python-dotenv docx2pdf pdf2docx requests")
+
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
@@ -305,4 +308,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+
     asyncio.run(main())
